@@ -1,0 +1,24 @@
+:root {
+    --bg-color: #111;
+    --text-color: #ddd;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Montserrat', sans-serif;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+i {
+    width: 100px;
+}
+
+a {
+    color: var(--text-color);
+}
