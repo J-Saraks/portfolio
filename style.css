@@ -9,6 +9,7 @@ body {
     background: var(--bg-color);
     color: var(--primary-color);
     font-family: 'Montserrat', sans-serif;
+    margin: 0; height: 100%; overflow: hidden
 }
 
 main {
@@ -80,9 +81,33 @@ img:hover {
     margin-top: 3%;
 }
 
+/* About page */
+
+#desc-container {
+    width: 80vw;
+}
+
+#desc-container span {
+    color: #3496eb;
+    font-weight: bold;
+}
+
+#desc-container p {
+    font-weight: bold;
+}
+
+#focus-on-text {
+    margin-top: 50px;
+    color: #3496eb;
+}
+
 /* Media queries */
 
 @media all and (max-width: 508px) {
+    body {
+        margin: auto; height: auto; overflow: auto;
+    }
+
     #btn-container {
         display: block;
     }
