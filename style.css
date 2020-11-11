@@ -1,25 +1,143 @@
+
 :root {
     --bg-color: #111;
-    --text-color: #ddd;
+    --primary-color: #fff;
+    --secondary-color: #3496eb;
 }
 
 body {
     background: var(--bg-color);
-    color: var(--text-color);
+    color: var(--primary-color);
     font-family: 'Montserrat', sans-serif;
 }
 
 main {
     display: flex;
-    align-items: center;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: 5rem;
+    letter-spacing: 0.5rem;
+    margin-bottom: 10px;
 }
 
 i {
-    margin-right: 50px;
-    font-size: 50px;
+    font-size: 4rem;
 }
 
 a { 
-    color: var(--text-color);
+    margin-right: 2rem;
+    margin-left: 2rem;
+    color: var(--primary-color);
+}
+
+a:hover {
+    color: #3496eb;
+}
+
+#btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding-top: 5vh;
+}
+
+button {
+    width: 10rem;
+    height: 3.5rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+    background: var(--bg-color);
+    color: var(--primary-color);
+    border: #ddd solid 1px;
+    border-radius: 4px;
+}
+
+button:hover {
+    cursor: pointer;
+    border: var(--secondary-color) solid 1px;
+    color: var(--secondary-color);
+}
+
+/* Projects page  */
+
+img {
+    border: #fff 1px solid;
+    border-radius: 4px;
+}
+
+img:hover {
+    border: #3496eb 1px solid;
+}
+
+#projects-container {
+    display: flex;
+    margin-top: 3%;
+}
+
+/* Media queries */
+
+@media all and (max-width: 508px) {
+    #btn-container {
+        display: block;
+    }
+
+    button {
+        width: 40vw;
+    }
+
+    a {
+        margin-right: 0.5rem;
+        margin-left: 0.5rem;
+    }
+
+    #projects-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    img {
+        border: #fff 1px solid;
+        border-radius: 4px;
+        max-width: 100%;
+    }
+
+    .projects-individual {
+        margin: 50px;
+    }
+}
+
+@media all and (max-width: 1357px) and (min-width: 509px) {
+
+    #btn-container {
+        display: block;
+    }
+
+    button {
+        width: 25vw;
+    }
+
+    a {
+        margin-right: 0.5rem;
+        margin-left: 0.5rem;
+    }
+    #projects-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    img {
+        border: #fff 1px solid;
+        border-radius: 4px;
+        max-width: 100%;
+    }
+
+    .projects-individual {
+        margin: 50px;
+    }
 }
